@@ -1,7 +1,7 @@
-{
-  "products":[
-    {"id":"01","title":"Product 1"},
-    {"id":"02","title":"Product 2"},
-    {"id":"03","title":"Product 3"}
-  ]
-}
+  {
+    "products":[
+      {"id":"01","title":"Product 1","description":"This is product 1"},
+      {"id":"02","title":"Product 2","description":"This is product 2"},
+      {"id":"03","title":"Product 3","description":"This is product 3"}
+    ]
+  }
