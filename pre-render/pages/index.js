@@ -1,14 +1,20 @@
+import Link from 'next/link';
+import Head from 'next/head'
 //下面的import  代码页不会发送给客户端 ,而且必须注意 必须要在客户端使用（getServerSideProps，getStaticProps） 不然会报错
 // import fs from 'fs'
 import fs from 'fs/promises';
 import path from 'path';
-import Link from 'next/link';
 
 export default function HOME(props) {
   console.log(props);
   const { products } = props;
   return (
     <div>
+      <Head>
+        <title>next js 会注入你在Head 标签中写的所有内容到首页的head中</title>
+        {/* 搜索引擎用 搜出来的就显示 content内容 */}
+        <meta name = "description" content='I am not happy!!!'/>
+      </Head>
       <ul>
         {products.map((p) => (
           <li key={p.id}>
