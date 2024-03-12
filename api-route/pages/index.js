@@ -19,7 +19,7 @@ export default function Home() {
       advice,
     };
 
-    fetch('/api/hello', {
+    fetch('/api/123', {
       method: 'POST',
       body: JSON.stringify(reqBody),
       headers: {
@@ -50,6 +50,8 @@ export default function Home() {
         <h1 className={styles.title}>fell free to add advice !</h1>
 
         <p className={styles.description}>any advice is important to us !</p>
+
+        <div>{process.env.db_username}</div>
 
         <form onSubmit={submitForm}>
           <div>
